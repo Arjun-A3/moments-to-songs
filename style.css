@@ -1,19 +1,50 @@
-body{
+@font-face {
+    font-family: HolidayFont;
+    src: url(./garage/fonts/MerryChristmasFlake.ttf);
+    font-weight: bold;
+}
+
+* {
+    font-family: HolidayFont;
+    color: #EED3B1;
+}
+
+body {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #1F4529;
 }
 
-label ,input , button{
+label,
+textarea,
+button {
     margin: 8px 20px;
 }
 
-.container{
+label {
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+textarea {
+    color: #47663B;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    border: 5px solid #EED3B1;
+    font-size: 20px;
+}
+
+button{
+    background-color: #1F4529;
+    font-size:50px;
+    border: 0px solid;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 40%;
+    top: 30%;
 }
